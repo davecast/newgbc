@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-Light.woff2") format("woff2"),
+    url("../webfonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-LightItalic.woff2") format("woff2"),
+    url("../webfonts/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../webfonts/Poppins-Italic.woff2") format("woff2"),
+    url("../webfonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+ --primary: #07C8F9; 
+ --primary-light: #99EAFF; 
+ --primary-dark: #2DC5EC; 
+ --secundary-dark: #05243d; 
+ --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+figure {
+  margin: 0;
+  font-size: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+.title-h3 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.title-decorator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title-decorator div {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-dark);
+  border-radius: 50px;
+  margin: -10px 0 0;
+}
+
+.t-blue-dark {
+  color: var(--primary-dark);
+}
+.t-center {
+  text-align: center;
+}
+
+.btn.btn-blue {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.btn-small {
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+.btn {
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-block;
+}
+
+/*HEADER*/
+.header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 99;
+  transition: all 0.25s ease-in-out;
+}
+.header_scrolled {
+  background-color: var(--secundary-dark);
+  -webkit-box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+}
+.header .header_container {
+  position: relative;
+  width: 100%;
+  height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header .header_logo {
+  z-index: 99;
+}
+.header .header_logo_image {
+  z-index: 9;
+  width: 168px;
+}
+.header .header_logo_image img {
+  width: 100%;
+  cursor: pointer;
+}
+.header .header_menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2.5rem;
+  top: 0;
+}
+.header .header_menu a {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.header .header_menu .current_page_item a, .header .menu .current_page_item a:hover {
+  color: var(--primary-light);
+  font-weight: bold;
+}
+.header .header_action {
+  z-index: 9;
+}
+/*HEADER*/
+
+/*BANNER*/
+.banner {}
+/*BANNER*/
+
+/*FOOTER*/
+.footer {}
+/*FOOTER*/

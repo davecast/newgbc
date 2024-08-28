@@ -1,0 +1,22 @@
+.testimonials {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials_title {
+  align-self: center;
+  justify-self: center;
+  margin: 0 0 2.5rem;
+}
+.testimonials_list {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 2rem;
+}
+.testimonials_item {}
+.testimonials_item_image {}
+.testimonials_item_head {}
+.testimonials_item_year {}
+.testimonials_item_name {}
+.testimonials_item_text {}
+.testimonials_item_footer {}
