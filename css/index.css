@@ -93,10 +93,18 @@ li {
   font-size: 5rem;
   line-height: 5rem;
 }
+.title-h4 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
 .title {
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
   font-weight: 300;
+}
+.title-uppercase {
+  text-transform: uppercase;
+}
+.title-bebas {
+  font-family: "Bebas Neue", sans-serif;
 }
 .title-decorator {
   display: flex;
@@ -110,9 +118,15 @@ li {
   border-radius: 50px;
   margin: -10px 0 0;
 }
-
+.title-align-center {
+  align-self: center;
+  justify-self: center;
+}
 .t-blue-dark {
   color: var(--primary-dark);
+}
+.t-white {
+  color: var(--white);
 }
 .t-center {
   text-align: center;
@@ -128,7 +142,7 @@ li {
 .btn-small {
   line-height: 0.875rem;
   font-size: 0.875rem;
-  padding: 0.5rem 2rem;
+  padding: 0.675rem 1.5rem;
   border-radius: 0.5rem;
 }
 
@@ -157,7 +171,7 @@ li {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 2rem;
-  z-index: 99;
+  z-index: 999;
   transition: all 0.25s ease-in-out;
 }
 .header_scrolled {
@@ -221,9 +235,191 @@ li {
 }
 /*HEADER*/
 
-/*BANNER*/
-.banner {}
-/*BANNER*/
+/*HOME*/
+.home_brand {
+  padding: 24px 0;
+  background-color: #07c8f929;
+}
+.home_brand_grid {
+  display: grid;
+  grid-template: 1fr / 320px 1fr;
+  gap: 2rem;
+}
+.home_brand_text,
+.home_brand_list {
+  font-size: 0;
+}
+.home_brand_text img,
+.home_brand_list img {
+  max-width: 100%;
+}
+.home_mission {
+  position: relative;
+  padding: 2.5rem 0;
+}
+.home_mission_grid {
+  display: grid;
+  grid-template: 1fr / 660px 1fr;
+  gap: 3rem;
+}
+.home_mission_image {
+  padding: 0 0 250px 0;
+  
+}
+.home_mission_image img {
+  max-width: 100%;
+}
+.home_mission_text {
+  padding: 0 0 0 3rem;
+  border-left: 1px solid #179BD7;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home_mission_title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+.home_mission_title_normal {
+  font-size: 2.5rem;
+}
+.home_mission_paragraph {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  max-width: 504px;
+  margin: 0 0 1.5rem;
+}
+.home_impact {
+  position: relative;
+  padding: 460px 0 5.5rem;
+  background-color: #07C8F9;
+}
+.home_impact_grid {
+  display: grid;
+  grid-template: 1fr / 540px 1fr;
+  gap: 2rem;
+}
+.home_impact_float {
+  position: absolute;
+  background-color: #d7f4ff77;
+  backdrop-filter: blur(10px);
+  bottom: -403px;
+  width: 449px;
+  height: 700px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 42px 48px;
+  z-index: 9;
+}
+.home_impact_girl img {
+  position: absolute;
+  bottom: 0px;
+}
+.home_impact_title {
+  justify-content: center;
+}
+.home_impact_item {
+  display: flex;
+  gap: 1.25rem;
+}
+.home_impact_item_text {
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+}
+.home_impact_item_text strong {
+  font-weight: 600;
+}
+.home_impact_item img {
+  font-size: 0;
+}
+.home_impact_video {
+  max-width: 420px;
+  width: 420px;
+  justify-self: flex-end;
+}
+.home_impact_video_content {
+  position: relative;
+}
+.home_impact_video_image {
+  position: absolute;
+  left: -40px;
+  bottom: -40px;
+  z-index: 4;
+  width: 110px;
+}
+.home_impact_video_frame {
+  position: absolute;
+
+}
+.home_impact_video_source {
+  max-width: 420px;
+  padding-top: 56.25%;
+  border: 12px solid #009fe5;
+  border-radius: 45px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+}
+.home_impact_video_source iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.home_problem {
+  background-image: url(../images/home_problems.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0;
+  border-top: 8px solid #A9EEFF;
+  border-bottom: 8px solid #A9EEFF;
+}
+.home_problem_grid {
+  display: grid;
+  grid-template: 1fr / 1fr 252px;
+  gap: 3.5rem;
+}
+.home_problem_list {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  justify-content: center;
+  gap: 3.5rem;
+}
+.home_problem_item {
+  background-color: #D8ECF5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 1.25rem;
+}
+.home_problem_item img {
+  max-height: 100px;
+  margin: 0 0 1rem;
+}
+.home_problem_item p {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.home_problem_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/*HOME*/
 
 /*FOOTER*/
 .footer {}

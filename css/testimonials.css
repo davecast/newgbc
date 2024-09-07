@@ -4,8 +4,6 @@
   flex-direction: column;
 }
 .testimonials_title {
-  align-self: center;
-  justify-self: center;
   margin: 0 0 2.5rem;
 }
 .testimonials_list {
