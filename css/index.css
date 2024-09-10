@@ -240,7 +240,9 @@ li {
 .header .header_action {
   z-index: 9;
 }
-.header_menu_mobile {}
+.header_menu_mobile {
+  display: none;
+}
 /*HEADER*/
 
 /*HOME*/
@@ -692,6 +694,7 @@ li {
   .home_mission_image_mobile {
     display: none;
   }
+  .header_menu_mobile,
   .home_mission_image_desktop {
     display: flex;
   }
