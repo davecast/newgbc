@@ -65,3 +65,25 @@
   font-size: 0.875rem;
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 1280px) {
+  .testimonials_list {
+    grid-template: 1fr / 1fr;
+  }
+  .testimonials_item_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .testimonials_item_footer {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials_item {
+    grid-template: 1fr / 1fr;
+  }
+  .testimonials_item_head {
+    max-width: 100%;
+  }
+}
